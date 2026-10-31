@@ -1259,16 +1259,31 @@ _Updated: October 31, 2026_
 - **Status**: Research breakthrough from Google DeepMind
 - **Impact**: Major scientific advancement in biology
 
-**107. AlphaGenome**
+**107. AlphaGenome & AlphaGenome Atlas**
 
-- **Link**: https://deepmind.google/blog/alphagenome-ai-for-better-understanding-the-genome/
-- **Description**: AI tool for identifying genetic drivers of disease
+- **Link**: https://deepmind.google/technologies/alphagenome | https://blog.google/innovation-and-ai/models-and-research/google-deepmind/alphagenome-atlas/
+- **Status**: Active Scientific Research Platform
+- **September 8, 2026 Milestone**: **AlphaGenome Atlas** launched as a free, open 1-petabyte AI database mapping and predicting the molecular effects of all **9 billion possible single-nucleotide DNA variants** across the human genome
 - **Features**:
-  - Predicts how mutations disrupt gene regulation
-  - Helps decode DNA's "dark matter" (noncoding regions)
-  - Applications in rare disease diagnosis and cancer research
-- **Announced**: January 28, 2026
-- **Status**: Research tool from Google DeepMind
+  - Identifies genetic variants that cause rare and complex diseases
+  - Maps non-coding regulatory variants to tissue-specific gene expression
+  - Helps accelerate genetic medicine and target identification
+  - Clinical genomics and population genetics applications
+
+**107b. WeatherNext 3, Planetary Prediction Engine & AlphaEarth**
+
+- **Link**: https://blog.google/innovation-and-ai/models-and-research/google-deepmind/weathernext-3/
+- **Status**: **GA (Launched September 3, 2026)**
+- **Description**: Global AI atmospheric and planetary modeling system:
+  - **WeatherNext 3**: Global weather model delivering hourly forecasts 5× sharper and 50% more accurate on precipitation; deployed in Google Search, Gemini, Maps, and Google Cloud
+  - **Planetary Prediction Engine**: Forecasts environmental crises, food security risks, and health disruptions
+  - **AlphaEarth Foundations**: Earth-observation foundation model for land, sea, and atmospheric monitoring
+
+**107c. Project Suncatcher**
+
+- **Link**: https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher/
+- **Status**: Active Aerospace & AI Hardware Moonshot (**Announced September 24, 2026**)
+- **Description**: Experimental mission testing Google TPU compute clusters in low Earth orbit. First telemetry and orbital AI inference verified in **October 2026** testing radiation hardening, vacuum dissipation, and inter-satellite laser mesh networking.
 
 **108. Aletheia**
 
@@ -1393,6 +1408,15 @@ _Updated: October 31, 2026_
   - Content Credentials support for authenticity
 - **Availability**: Global YouTube creators
 
+**119b. Made on YouTube 2026 Updates (Ask Studio & Conversational Partner)**
+
+- **Announced**: September 23, 2026 (Made on YouTube)
+- **Features**:
+  - **Ask Studio & Conversational Editing Partner**: Gemini-powered editing assistant built directly into YouTube Studio and YouTube Create
+  - **Channel-Matched Dynamic Thumbnails**: Real-time generative thumbnail suggestions trained on channel styling
+  - **Video Hook A/B Testing**: Multi-variant opening hook simulation and retention scoring
+  - **Omni Integration**: Native multi-shot video clip creation via Gemini Omni for YouTube Shorts creators
+
 ### **Android & Device AI Features**
 
 **120. Circle to Search**
@@ -1418,14 +1442,36 @@ _Updated: October 31, 2026_
 - **Use**: Powers Circle to Search, notification features, offline AI
 - **Availability**: Select Android devices (Pixel 8+, select flagships)
 
-**122. Android AI Features**
+**122. Android AI Features & Android 17**
 
 - **Features Include**:
-  - **Recorder summaries**: AI transcription and summarization
-  - **Call screening**: AI-powered spam and call filtering
-  - **Smart compose**: Writing suggestions across apps
-  - **Live translate**: Real-time translation in calls
-- **Availability**: Android devices, enhanced on Pixel
+  - **Android 17 AI Integration**: Debuted mid-2026 with system-wide multimodal context and **Gemini 3.5 Live Translate**
+  - **Recorder summaries**: AI transcription and multi-speaker summarization
+  - **Call screening**: AI-powered spam detection and natural conversation handling
+  - **Smart compose**: Context-aware writing suggestions across applications
+  - **Live translate**: Real-time voice and video translation in calls
+- **Availability**: Android 16/17 devices, enhanced on Pixel hardware
+
+**122b. Pixel 11 Series & Pixel Watch 5**
+
+- **Link**: https://store.google.com
+- **Launched**: August 12, 2026 (Made by Google 2026)
+- **Hardware & AI Features**: Powered by **Google Tensor G6** processor running on-device Gemini Nano:
+  - **Magic Capture**: Instant zero-shutter-lag action moment recomposition
+  - **Camera Looks**: Cinematic color grading and lighting transfers
+  - **Rambler**: Real-time ambient natural voice transcription and note-taking
+  - **Magic Cue**: Proactive contextual suggestions based on on-screen activities
+  - **Pixel Watch 5 Health Guardian**: Real-time physiological trend anomaly detection
+
+**122c. Googlebook & Googlebook OS**
+
+- **Link**: https://store.google.com
+- **Launched**: Pre-orders September 21, 2026; in stores **October 4–5, 2026** (starting at $899 bundled with 12 months Google AI Pro)
+- **AI Features**:
+  - **Create My Widget**: Direct prompt-to-widget system generator for custom desktop utilities
+  - **Gemini Spark Background Execution**: Autonomous task execution even when the laptop lid is closed
+  - **Local Gemma 4 12B Support**: Offline generative execution powered by integrated NPU hardware
+  - **Google Antigravity Pre-Installed**: Native agentic coding workspace with full Linux terminal integration
 
 **123. Accessibility AI Features**
 
@@ -1938,7 +1984,8 @@ _Updated: October 31, 2026_
 | `gemini-3.8-live*` and `gemini-3.8-flash*-tts` | **GA** | Released Sep 15 / Sep 22 |
 | older 2.5/3.1 Live & TTS preview IDs | **Scheduled shutdown** | Earliest Nov 17, 2026; update to GA |
 | `deep-research-pro-preview-12-2025` | **Shut down** | Oct 23, 2026; use April 2026 previews |
-| `antigravity-preview-05-2026` | **Shut down** | Oct 5, 2026; `antigravity-preview-09-2026` remains preview |
+| `antigravity-preview-05-2026` | **Shut down** | Oct 5, 2026; use `antigravity-preview-09-2026` (Preview Sep 17) |
+| Vertex AI open-model MaaS (16 endpoints) | **Retired** | Oct 21, 2026 (DeepSeek-R1, V3.1/3.2, GLM 5/4.7, Llama 3.3 70B, MiniMax M2; self-deploy via Model Garden) |
 | `gemini-robotics-er-1.6-preview` | **Shut down** | Aug 31, 2026; successor ER 2 preview |
 
 **Sources of truth:** [Gemini API release notes](https://ai.google.dev/gemini-api/docs/changelog) · [Gemini API deprecations](https://ai.google.dev/gemini-api/docs/deprecations) · [Firebase Studio sunset](https://firebase.google.com/docs/studio/migrating-project). Vendor shutdown dates are earliest announced dates when described that way; verify availability against the live endpoint when deploying.
