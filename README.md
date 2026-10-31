@@ -1,8 +1,40 @@
 # Comprehensive Catalogue of Google AI, ML & Data Science Products
 
-_Updated: June 24, 2026_
+_Updated: October 31, 2026_
 
-> **Verification standard (June 24, 2026):** Every original line was reviewed. Fast-changing claims—model availability, launch/status, subscriptions, APIs, deprecations, and regional access—were rechecked against Google/DeepMind/Google Cloud/Google for Developers primary sources. Announced-but-not-released items are explicitly labelled; experimental availability can still vary by account, age, language, and country.
+> **Verification scope (October 31, 2026):** This is a cumulative catalogue retaining historical product descriptions. The October update rechecked high-risk lifecycles and material releases through official Google, DeepMind, Firebase, and API documentation. **Not every long-tail product, price, quota, user statistic or feature has been re-verified on October 31.** The status matrix below and dated inline corrections override earlier 2026 snapshot wording.
+>
+> **Status meanings:** **GA** = released/stable in the specified surface; **Preview/Beta** = limited or changeable; **Announced/Trusted testing** = not generally accessible; **Deprecated** = migration advised though endpoint may still respond; **Shut down** = endpoint no longer supported; **Sunsetting** = existing customers may have transitional access. **Product UI availability and API endpoint availability are different questions.**
+
+---
+
+## 🚦 October 31, 2026 — Verified status & migration priorities
+
+| Product / endpoint | Status as of review | What to do | Official evidence |
+|---|---|---|---|
+| **Gemini 4 Argon (`gemini-4-argon`)** | **GA**, released Oct 13 | Add as current high-capability reasoning/coding API model | [Gemini API releases](https://ai.google.dev/gemini-api/docs/changelog) |
+| **Gemini 4 Carbon** | **Announced; trusted cyber defenders only**, Oct 28 | Do **not** label public GA or imply general API access | [Google announcement](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/) |
+| **Gemini 3.8 Flash** | **GA**, Sep 2 | Preferred current Flash model for new agentic applications | [API releases](https://ai.google.dev/gemini-api/docs/changelog) |
+| **Gemini 3.5/3.7 Flash endpoints** | **Superseded / alias routing** | Switch IDs to `gemini-3.6-flash` / `gemini-3.8-flash`; not hard shutdowns | [Model lifecycle](https://ai.google.dev/gemini-api/docs/deprecations) |
+| **Nano Banana 2.1 (`gemini-nano-banana-2.1`)** | **GA**, Oct 6 | Use for efficient image generation/editing; `gemini-3.1-flash-image` deprecated with no shutdown date | [API releases](https://ai.google.dev/gemini-api/docs/changelog) |
+| **Imagen 4 Gemini Developer API IDs** | **Shut down**, Aug 17 | Migrate to supported Nano Banana model | [Model lifecycle](https://ai.google.dev/gemini-api/docs/deprecations) |
+| **Veo 2 / Veo 3 API IDs** | **Shut down**, Jun 30 | Move Gemini Developer API workflows to `gemini-omni-1.1-flash` or a supported enterprise endpoint | [Model lifecycle](https://ai.google.dev/gemini-api/docs/deprecations) |
+| **Veo 3.1 / 3.1 Fast / 3.1 Lite preview API IDs** | **Shut down**, Oct 22 | Move to `gemini-omni-1.1-flash`; the Flow/Veo consumer experience is not equivalent to the retired IDs | [Model lifecycle](https://ai.google.dev/gemini-api/docs/deprecations) |
+| **Gemini Omni 1.1 Flash** | **GA**, Aug 27 | Supported Gemini API video creation/editing replacement | [API releases](https://ai.google.dev/gemini-api/docs/changelog) |
+| **Lyria 3.5 (`lyria-3.5`)** | **GA**, Sep 3 | Use for full-length music via Gemini API where accessible | [API releases](https://ai.google.dev/gemini-api/docs/changelog) |
+| **Gemini 3.8 Live and TTS** | **GA**, Sep 15 / Sep 22 | Migrate affected Live/TTS previews before **Nov 17, 2026** | [API lifecycle](https://ai.google.dev/gemini-api/docs/deprecations) |
+| **Firebase Studio / Project IDX heritage** | **Sunsetting**, Mar 22, 2027 | New users/workspaces disabled Jun 22, 2026; export to AI Studio or Antigravity | [Firebase migration guide](https://firebase.google.com/docs/studio/migrating-project) |
+| **Gemini CLI / Code Assist individual plans** | **Consumer migration complete**, Jun 18 | Antigravity CLI for consumers; new Code Assist sales stopped Oct 9, 2026; renewals through 2027 | [Google developer notice](https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/) |
+| **Jules** | **Winding down / Deprecated (Oct 27, 2026)** | Active sessions end **Nov 11, 2026** (then read-only); full shutdown **Dec 31, 2026**. Transitioning to Antigravity | [Jules update](https://jules.google.com) |
+| **Opal** | **Shutting down Nov 17, 2026** | Workflows do not auto-migrate (files stay in Drive `My Drive > Opal`). Capabilities graduate into **Skills in Gemini** | [Opal update](https://opal.withgoogle.com) |
+| **Gems** | **Migrating to Skills in Gemini** | Personal accounts migrate starting **Nov 17, 2026**; Workspace accounts migrate later | [Gemini updates](https://gemini.google/gems) |
+| **Gemini 3.5 Pro** | **Cancelled / Bypassed** | Standalone 3.5 Pro release skipped; architectural advancements incorporated directly into **Gemini 4 Argon** | [Model announcements](https://blog.google/technology/ai/) |
+| **Gemini App** | **Milestone: 1B+ MAU** | Surpassed 1 billion monthly active users (announced August 11, 2026) | [Google announcements](https://blog.google) |
+| **Genie 4** | **Research preview / trusted testers**, Oct 27 | Real-time interactive world model with native audio; join Project Genie waitlist | [DeepMind announcement](https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/) |
+| **Gemini Computer Use** | **GA**, Oct 30, 2026 | Agent-driven desktop and browser interaction across Interactions & GenerateContent APIs | [API releases](https://ai.google.dev/gemini-api/docs/changelog) |
+| **Playground (Google Labs)** | **Experimental preview**, Oct 7, 2026 | Prompt-to-playable browser game generation (US 18+) | [Google Labs](https://labs.google/) |
+
+**Important:** A vendor's model name may remain visible in a product UI even after a specifically named API endpoint is retired. Treat confirmed shutdowns as applying to the documented endpoint and surface, not as proof an entire creative product has closed.
 
 ---
 
@@ -44,21 +76,13 @@ _Updated: June 24, 2026_
   - Localized editing capabilities
 - **Access**: Gemini Pro/Ultra tiers and selected Google products
 
-**4. Nano Banana 2**
+**4. Nano Banana 2 (Gemini 3.1 Flash Image) — deprecated API generation**
 
-- **Link**: https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/
-- **Description**: Next-generation image generation model combining Pro quality with Flash speed (technically Gemini 3.1 Flash Image)
-- **Features**:
-  - High-quality image generation with faster results (2-3x faster than Pro)
-  - Improved performance over previous versions
-  - Available across Gemini app and Google Search
-  - Supports SynthID watermarking
-  - Advanced world knowledge and improved text rendering
-  - Better subject consistency and production-ready specifications
-  - **2026 Update**: Now the default model across Google products
-- **Access**: Developers can build with Nano Banana 2 via API
-- **Announced**: February 26, 2026
-- **Comparison**: 2-3x faster than Nano Banana Pro; now default model across Google products
+- **Link**: https://ai.google.dev/gemini-api/docs/deprecations
+- **Historical release**: February 26, 2026; GA model ID `gemini-3.1-flash-image` arrived May 28.
+- **October 2026 status**: **Deprecated**, no shutdown date announced; **Nano Banana 2.1** (`gemini-nano-banana-2.1`, GA October 6) is the recommended efficient replacement.
+- **Capabilities**: Rapid multimodal image generation/editing; Nano Banana 2.1 improves prompt adherence, text, subject consistency, panoramic aspect ratios and up-to-4K generation.
+- **Access caveat**: The model ID lifecycle concerns the Gemini Developer API; a Gemini/Flow frontend can have different model routing.
 
 **5. Whisk**
 
@@ -107,8 +131,9 @@ _Updated: June 24, 2026_
 
 ### **Video Generation & Filmmaking**
 
-**9. Veo 3 & Veo 3.1**
+**9. Veo 3 & Veo 3.1 — historical generation / retired Gemini Developer API IDs**
 
+- **October 2026 developer notice:** Veo 2/3 API models shut down June 30; Veo 3.1 preview API models shut down October 22. The Google Flow creative experience is a separate product surface. Use Gemini Omni 1.1 Flash or current enterprise models for new developer integrations.
 - **Link**: https://deepmind.google/models
 - **Description**: Google's flagship state-of-the-art video generation models
 - **Features**:
@@ -132,16 +157,12 @@ _Updated: June 24, 2026_
 - **Access**: Flow, Gemini app, Vertex AI, Gemini API
 - **Statistics**: 275+ million videos generated by late 2025
 
-**10. Veo 3.1 Lite**
+**10. Veo 3.1 Lite (historical preview endpoint)**
 
-- **Link**: https://blog.google/innovation-and-ai/technology/ai/veo-3-1-lite
-- **Description**: Most cost-effective Veo model for high-volume applications
-- **Features**:
-  - Reduced latency and lower compute cost (<50% of Veo 3.1 Fast)
-  - Optimized for 720p/1080p rapid-iteration clips
-  - Text-to-Video and Image-to-Video support
-- **Access**: Gemini API, Google AI Studio
-- **Announced**: March 31, 2026
+- **Link**: https://ai.google.dev/gemini-api/docs/deprecations
+- **Historical role**: Lower-cost Veo 3.1 video generation preview.
+- **API status**: `veo-3.1-lite-generate-preview` **shut down October 22, 2026**. `veo-3.1-generate-preview` and `veo-3.1-fast-generate-preview` had the same date.
+- **Migration**: Use `gemini-omni-1.1-flash` for supported Gemini Developer API video workflows, or check supported GA models on the Gemini Enterprise Agent Platform. Do not describe the retired preview API as available for new builds.
 
 **11. Flow (formerly VideoFX)**
 
@@ -202,14 +223,12 @@ _Updated: June 24, 2026_
 - **Access**: Gemini app, Google Vids, Vertex AI
 - **Announced**: February 18, 2026
 
-**16. Gemini 3.1 Flash TTS**
+**16. Gemini 3.8 Flash TTS / Flash-Lite TTS**
 
-- **Link**: https://ai.google.dev/models/gemini-flash-tts
-- **Description**: Next-generation text-to-speech model for expressive, natural AI speech
-- **Features**:
-  - Granular control over vocal style, pacing, tone, and accent via audio tags
-  - Supports 70+ languages; multi-speaker dialogue functionality
-- **Announced**: April 15, 2026
+- **Link**: https://ai.google.dev/gemini-api/docs/changelog
+- **Status**: **Generally available since September 22, 2026**, with IDs `gemini-3.8-flash-tts` and `gemini-3.8-flash-lite-tts`.
+- **Features**: Expressive speech synthesis, customizable voices and access to the Gemini API Voices endpoint. Capability and voice-consent requirements vary by API.
+- **Migration deadline**: `gemini-3.1-flash-tts-preview`, `gemini-2.5-flash-preview-tts` and `gemini-2.5-pro-preview-tts` list **November 17, 2026** as earliest shutdown. Use current GA TTS IDs instead.
 
 **17. ProducerAI**
 
@@ -325,16 +344,17 @@ _Updated: June 24, 2026_
 - **Features**: Accessible via Option + Space shortcut; window sharing and screen awareness
 - **Launched**: April 15, 2026
 
-**27. Gems**
+**27. Gems — Migrating to Skills in Gemini**
 
 - **Link**: https://gemini.google/gems
+- **Status (Late 2026)**: **Migrating to Skills in Gemini**. Personal Google accounts begin migration on **November 17, 2026**; Google Workspace enterprise accounts will migrate at a subsequent date.
 - **Description**: Custom versions of Gemini that you can create and customize
 - **Features**:
   - Create custom AI experts for specific topics
   - Give specific instructions and personalities
   - Share Gems with others
   - Similar to custom GPTs
-- **Availability**: Gemini Advanced subscribers
+- **Availability**: Gemini Advanced subscribers (transitioning to Skills in Gemini)
 
 **28. Gemini Live**
 
@@ -374,9 +394,10 @@ _Updated: June 24, 2026_
   - Integrates Search, Maps, and Lens
 - **Status**: Trusted tester program; features rolling out across AI Mode and Gemini
 
-**31. Jules**
+**31. Jules — Deprecated / Winding Down**
 
 - **Link**: https://ai.google.dev/aistudio / https://jules.google.com
+- **Status (October 2026)**: **Deprecated & Winding Down**. Active coding sessions are supported through **November 11, 2026**, after which Jules enters read-only mode; full shutdown takes effect **December 31, 2026**. Core autonomous codebase reasoning and agentic workflows are migrating to the **Google Antigravity** platform. Users must export all historical project data before the December 31 cutoff.
 - **Description**: Autonomous AI coding agent powering multiple Google developer experiences
 - **Features**:
   - Reads entire codebases and understands context
@@ -390,10 +411,9 @@ _Updated: June 24, 2026_
   - **Render integration**: Self-healing deployments for faster fix (December 2025)
   - **Jules Tools**: Lightweight command-line interface (October 2025)
   - **Jules API**: Integrate Jules directly into your own systems (October 2025)
-  - **Graduated from beta**: Now generally available (February 2026)
+  - **Graduated from beta**: Generally available February 2026; deprecated October 2026
 - **Powered by**: Gemini 2.5 Pro (upgraded to Gemini 2.5 in August 2025)
-- **Access**: Public beta worldwide (free during beta); enhanced access on AI Ultra
-- **Integration**: Gemini Code Assist, CLI, and other dev tools
+- **Successor**: Google Antigravity and Antigravity CLI
 
 **32. Deep Research & Deep Research Max**
 
@@ -558,9 +578,10 @@ _Updated: June 24, 2026_
 - **Powered by**: Gemini 2.5 Flash + on-device Nano variants
 - **Availability**: Google Labs
 
-**46. Opal**
+**46. Opal — Shutting Down November 17, 2026**
 
 - **Link**: https://opal.withgoogle.com
+- **Status (October 2026)**: **Shutting Down November 17, 2026**. Workflows do **not** migrate automatically. Created mini-app definitions and exported assets remain accessible in Google Drive (`My Drive > Opal`). Mini-app creation capabilities and modular tool-chaining graduate into **Skills in Gemini**.
 - **Description**: No-code AI app builder for creating AI mini-apps
 - **Features**:
   - Build AI mini-apps with natural language ("vibe coding")
@@ -568,7 +589,7 @@ _Updated: June 24, 2026_
   - Visual workflow editor
   - Chain together prompts, models, and tools
   - Share and deploy apps instantly via shareable links
-- **Availability**: 160+ countries (expanded from US-only in mid-2025)
+- **Availability**: 160+ countries (graduating into Skills in Gemini)
 
 **47. Gemini for Google Workspace**
 
@@ -702,15 +723,12 @@ _Updated: June 24, 2026_
   - Price comparisons and recommendations
 - **Integration**: Google Search
 
-**58. Search Live**
+**58. Search Live — available where AI Mode is available**
 
-- **Description**: Real-time conversational search using your camera
-- **Features**:
-  - Point camera and talk to Search about what you see
-  - Interactive environment understanding
-  - Real-time visual + conversational search
-- **Based on**: Project Astra technology
-- **Status**: Coming soon
+- **Official link**: https://blog.google/products-and-platforms/products/search/search-live-global-expansion/
+- **Availability**: Expanded globally **March 26, 2026** to regions and languages where Google AI Mode operates; Google cited **200+ countries and territories** at the announcement. Access still depends on supported app/account/age/region.
+- **Experience**: Conversational Search by voice and camera in the Google app (Android and iOS) or through the Google Lens Live entry point; spoken responses with follow-up links.
+- **Model caution**: Google's March announcement named Gemini 3.1 Flash Live; underlying routing can evolve independently of the Gemini Developer API model-ID lifecycle.
 
 **59. Say What You See**
 
@@ -816,17 +834,12 @@ _Updated: June 24, 2026_
   - Accelerates agent development workflow
 - **Availability**: Google AI Studio users
 
-**67. Project IDX**
+**67. Project IDX — historical predecessor to Firebase Studio**
 
-- **Link**: https://idx.dev
-- **Description**: AI-first cloud-based integrated development environment
-- **Features**:
-  - Build full-stack web and multiplatform apps
-  - Gemini built directly into the editor
-  - In-editor chat, code completions, code actions
-  - Real-time previews
-  - Code completion and debugging assistance
-- **Availability**: Developers
+- **Link**: https://firebase.google.com/docs/studio/migrating-project
+- **Lifecycle**: Project IDX was incorporated into Firebase Studio; Firebase Studio itself is **sunsetting March 22, 2027**, so do not recommend a new Project IDX/Firebase Studio workspace.
+- **Access**: Firebase Studio disabled new account signup and new workspace creation June 22, 2026. Existing workspaces remain temporarily usable until the sunset.
+- **Migration**: Google AI Studio for browser prototyping; Google Antigravity for local, code-first agentic development. Core Firebase services are **not** being discontinued.
 
 **68. Core ML Frameworks**
 
@@ -862,18 +875,12 @@ _Updated: June 24, 2026_
 - **Introduced**: Alongside Gemini 3
 - **Availability**: Developers
 
-**71. Firebase Studio**
+**71. Firebase Studio — sunsetting March 22, 2027**
 
-- **Link**: https://firebase.google.com/docs/studio
-- **Description**: Agentic development environment for building full-stack AI apps
-- **Features**:
-  - App Prototyping agent
-  - 60+ pre-built templates
-  - Native code workspace
-  - Genkit support (Python, Go)
-  - Firebase integration
-  - GUI for building AI-powered applications
-- **Availability**: Preview
+- **Link**: https://firebase.google.com/docs/studio/migrating-project
+- **Status (October 2026)**: **Sunsetting, not generally available to new users**. New workspace creation/user registration disabled June 22, 2026; existing workspaces can run through March 22, 2027.
+- **Migration urgency**: Export source/projects before final shutdown; after that date remaining Firebase Studio workspace data is scheduled for deletion. See the vendor's AI Studio/Antigravity migration steps.
+- **Not affected**: Firebase Authentication, Firestore and App Hosting remain independent products and continue to function.
 
 ### **Code Understanding & Automation AI**
 
@@ -889,29 +896,20 @@ _Updated: June 24, 2026_
   - Updates continuously after each code change
 - **Status**: Public preview for open-source repos; CLI extension planned for private repos
 
-**73. Gemini CLI (Consumer Transitioned to Antigravity CLI)**
+**73. Gemini CLI — consumer access transitioned to Antigravity CLI**
 
 - **Link**: https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/
-- **Description**: Google's earlier community/consumer command-line AI agent, now superseded for individual users by Antigravity CLI
-- **Transition date**: June 18, 2026
-- **Current status**:
-  - Free, Google AI Pro, and Google AI Ultra individual requests stopped being served through Gemini CLI on June 18, 2026
-  - Enterprise Gemini Code Assist / Gemini CLI access remains supported under enterprise arrangements
-  - Individual developers should migrate to **Antigravity CLI**
-- **Historical capabilities**: Terminal chat, repository interaction, command execution, tools, MCP integrations, and coding workflows
+- **Consumer status**: Free and Google AI Pro/Ultra individual Gemini CLI request servicing ended June 18, 2026. Use **Antigravity CLI** for consumer workflows.
+- **Enterprise exception**: Gemini Code Assist Standard/Enterprise and applicable paid enterprise/API arrangements remain supported; avoid a blanket "Gemini CLI shut down" claim.
+- **Distinct tool**: Google's **Gemini API CLI** (`gemini-api`) entered **beta October 27, 2026** and is a stateless API client—not the older Gemini CLI and not Antigravity CLI.
+- **Source**: https://ai.google.dev/gemini-api/docs/changelog
 
-**74. Gemini Code Assist**
+**74. Gemini Code Assist — enterprise continuity / consumer transition**
 
-- **Link**: https://codeassist.google
-- **Description**: IDE-integrated coding assistant for professional developers
-- **Features**:
-  - VS Code and JetBrains integration
-  - Cloud console integration
-  - Context-aware suggestions, refactors, and explanations
-  - Powered by latest Gemini models
-  - Tightly integrated with Google Cloud and Git
-  - Customized for coding tasks
-- **Availability**: Google AI Pro/Ultra subscribers
+- **Link**: https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/
+- **Status**: Google ceased new commercial sales of Gemini Code Assist on **October 9, 2026**. Existing customer renewals will be supported through 2027. Consumer/free/Google AI Pro/Ultra pathways transitioned on June 18, 2026. Do **not** advertise them as active individual consumer entitlements.
+- **Enterprise**: Standard/Enterprise licensed IDE integrations and enterprise Gemini CLI access continue under Google's announced enterprise support agreements through 2027.
+- **Consumer alternative**: Individual developers and teams are directed to Google Antigravity and Antigravity CLI.
 
 **75. Gemini Cloud Assist**
 
@@ -1115,18 +1113,17 @@ _Updated: June 24, 2026_
 
 ### **Foundation Models**
 
-**92. Gemini Model Family**
+**92. Gemini Model Family (Core Foundation Models)**
 
 - **Link**: https://ai.google.dev/gemini-api/docs/models
-- **Description**: Google's multimodal model family spanning reasoning, coding, agents, audio, images, video, and efficient deployment
-- **Current public highlights (June 24, 2026)**:
-  - **Gemini 3.5 Flash**: Generally available; frontier agentic/coding performance
-  - **Gemini 3.1 Pro**: High-capability reasoning model
-  - **Gemini 3.1 Flash-Lite**: Generally available, cost/scale optimized
-  - **Gemini 3.1 Flash Image (Nano Banana 2)** and **Gemini 3 Pro Image (Nano Banana Pro)**: Generally available native visual models
-  - **Gemini Omni Flash**: Rolling out as the first Gemini Omni model for multimodal-to-video creation/editing
-- **Announced, not yet generally available as of June 24, 2026**: **Gemini 3.5 Pro**; Google said at I/O 2026 that it was still in development and planned for a later rollout
-- **Developer access**: Gemini API, Google AI Studio, Antigravity, Android Studio, Vertex AI / Gemini Enterprise depending on model
+- **Current High-Capability GA**: **Gemini 4 Argon** (`gemini-4-argon`, GA October 13, 2026) featuring 1M unified multimodal input and up to 1M output decode; state-of-the-art for coding, agents, mathematics, and complex reasoning.
+- **Bypassed Model**: **Gemini 3.5 Pro was cancelled/bypassed**; standalone release skipped and its architectural breakthroughs incorporated directly into Gemini 4 Argon.
+- **Announced Flagship Pre-Release**: **Gemini 4 Carbon** (announced October 28, 2026; specialized cybersecurity & long-horizon reasoning model in trusted preview via the Fairwind Program).
+- **Current Workhorses**: **Gemini 3.8 Flash** (GA September 2, 2026), **Gemini 3.6 Flash** (GA July 21, 2026), and **Gemini 3.5 Flash-Lite** (GA July 21, 2026).
+- **Superseded Aliases**: `gemini-3.5-flash` routes to `gemini-3.6-flash`, `gemini-3.7-flash` routes to `gemini-3.8-flash`.
+- **Real-Time Multimodal**: **Gemini 3.8 Live** & **Gemini 3.8 Live Extended Thinking** (GA September 15, 2026).
+- **Consumer Milestone**: The Gemini consumer app surpassed **1 Billion+ monthly active users** (announced August 11, 2026).
+- **Legacy Tier**: Gemini 2.5 Pro / Flash access restricted to prior active callers on September 18, 2026; retired on Vertex AI October 20, 2026. Gemini 2.0 Flash family permanently shut down June 1, 2026.
 
 **93. Gemini 3.1 Pro**
 
@@ -1140,30 +1137,19 @@ _Updated: June 24, 2026_
 - **Access**: Gemini API, Vertex AI, Gemini app, NotebookLM
 - **Announced**: February 2026
 
-**94. Gemini 3.1 Flash-Lite**
+**94. Gemini 3.1 Flash-Lite — GA, successor available**
 
-- **Link**: https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-lite
-- **Description**: Low-latency, cost-efficient multimodal model optimized for high-frequency lightweight and agentic workloads
-- **Inputs**: Text, image, video, audio, and PDF
-- **Use cases**: High-volume extraction, classification, transformation, moderation support, routing, and latency-sensitive applications
-- **Verified status**: Generally available since May 7, 2026
-- **Lifecycle**: The preview endpoint was shut down May 25, 2026; use the stable `gemini-3.1-flash-lite` model ID
-- **Pricing/limits**: Consult the live Gemini API pricing and rate-limit pages; fixed prices and leaderboard scores were removed because they are volatile
+- **Link**: https://ai.google.dev/gemini-api/docs/deprecations
+- **Status**: GA since May 7, 2026. The `gemini-3.1-flash-lite-preview` endpoint shut down May 25, 2026.
+- **Lifecycle**: Stable `gemini-3.1-flash-lite` has a stated **May 7, 2027** shutdown date; Google recommends `gemini-3.5-flash-lite` for migration.
+- **New-build guidance**: Prefer the newer 3.5 Flash-Lite or 3.8 Flash models according to latency, price and capability requirements.
 
-**95. Gemini 3 Deep Think (Updated)**
+**95. Gemini 3 Deep Think — special reasoning experience (historical 2026 generation)**
 
 - **Link**: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/
-- **Description**: Specialized reasoning mode for science, research, and engineering
-- **Features**:
-  - Major upgrade for modern science/engineering challenges
-  - Works with messy/incomplete data
-  - Achieves 48.4% on Humanity's Last Exam (without tools)
-  - 84.6% on ARC-AGI-2 (verified by ARC Prize Foundation)
-  - 3455 Elo on Codeforces
-  - Gold-medal level on 2025 International Math Olympiad
-  - Excels in physics and chemistry Olympiads
-- **Access**: Gemini app (Google AI Ultra subscribers), early access via API
-- **Announced**: February 12, 2026
+- **Description**: Specialized reasoning modes and research workflows; access can differ by consumer subscription and API.
+- **Lifecycle note**: Do not infer availability of a standalone public Deep Think API ID from consumer plan marketing. Compare current Gemini 4 Argon and preview/research options against the live model directory.
+- **Benchmarks**: Previously published results are historical snapshots, not persistent leaderboards.
 
 **96. Gemini Audio**
 
@@ -1174,15 +1160,12 @@ _Updated: June 24, 2026_
   - Generates expressive speech in real-time
 - **Use**: Powers Gemini Live and NotebookLM Audio Overviews
 
-**97. Imagen 3 & Imagen 4 (API Deprecation Status)**
+**97. Imagen 3 & Imagen 4 — retired Gemini Developer API model IDs**
 
 - **Link**: https://ai.google.dev/gemini-api/docs/deprecations
-- **Description**: Google's dedicated text-to-image model line; newer native Gemini image models now cover many generation/editing workflows
-- **Verified status (June 24, 2026)**:
-  - Imagen 4 API models are marked deprecated, with shutdown scheduled for **August 17, 2026**
-  - Developers should check the live deprecations page and migrate to supported native Gemini image models where appropriate
-  - Gemini 3.1 Flash Image and Gemini 3 Pro Image GA variants replaced their preview endpoints; preview endpoints were scheduled to shut down June 25, 2026
-- **Historical use**: ImageFX, enterprise image generation, and visual creative workflows
+- **API status**: Imagen 4 stable `imagen-4.0-{generate,ultra-generate,fast-generate}-001` IDs **shut down August 17, 2026**. Older Imagen 3 models were shut down earlier.
+- **Recommended replacement**: `gemini-nano-banana-2.1` or another currently supported native Gemini image model.
+- **Surface distinction**: Do not infer that a consumer image-generation product sharing the Imagen name is discontinued solely from the Gemini API endpoint retirement.
 
 **98. PaLM 2 Family (Sunset April 2026)**
 
@@ -1213,16 +1196,12 @@ _Updated: June 24, 2026_
 - **Announced**: April 2, 2026
 - **License**: Apache 2.0
 
-**101. Gemini Robotics-ER 1.6**
+**101. Gemini Robotics 2 / Robotics-ER 2**
 
-- **Link**: https://deepmind.google/blog/gemini-robotics-er-1-6/
-- **Description**: Embodied reasoning model for robotics (Boston Dynamics collaboration)
-- **Features**:
-  - Enhanced spatial logic and multi-view understanding
-  - **Instrument reading**: Capability to read analog gauges and sight glasses
-  - Precision task planning and success detection
-- **Availability**: Gemini API, Google AI Studio
-- **Announced**: April 14, 2026
+- **Link**: https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/
+- **Released / research access**: Gemini Robotics 2 family described July 30, 2026, including Robotics-ER 2 and an on-device variant for embodied intelligence.
+- **API lifecycle**: `gemini-robotics-er-1.6-preview` shut down **August 31, 2026**; replacement `gemini-robotics-er-2-preview` remains a **preview** model, not GA.
+- **Applications**: Whole-body control, spatial reasoning, multimodal robotic manipulation; deployment eligibility and hardware requirements vary.
 
 **102. TimesFM**
 
@@ -1262,16 +1241,12 @@ _Updated: June 24, 2026_
 
 ### **Specialized Research Models**
 
-**105. Genie 3 / Project Genie**
+**105. Genie 3 / Project Genie — legacy context; Genie 4 now research preview**
 
-- **Link**: https://deepmind.google/models/genie/
-- **Description**: Google DeepMind world-model research for generating interactive environments from prompts and images
-- **Features**:
-  - Creates explorable, temporally consistent virtual worlds
-  - Supports interactive movement and environment response
-  - Research platform for world simulation and embodied/agent research
-- **Product access**: **Project Genie** is listed as a Google AI Ultra experiment for eligible adult users in supported regions
-- **Status**: Active research/experimental product; not a conventional game engine or generally available production API
+- **Link**: https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/
+- **Genie 3**: Earlier world-model generation retained for research history and Project Genie context.
+- **Genie 4**: Announced October 27, 2026; **research preview limited to trusted testers**, with a waitlist and announced future availability for eligible Google AI Ultra/Project Genie users and API partners.
+- **Caution**: Not a general-access production 3D engine or standard commercial generative-video API. Detailed visual and physical consistency remain experimental.
 
 **106. AlphaFold**
 
@@ -1342,14 +1317,9 @@ _Updated: June 24, 2026_
 **112. Immersive View in Google Maps**
 
 - **Link**: https://maps.google.com
-- **Description**: AI-powered 3D visualization of routes and locations
-- **Features**:
-  - 3D fly-throughs of routes
-  - AI-powered environment visualization
-  - Route previews with realistic rendering
-  - Weather and traffic predictions
-- **Use**: Enhanced navigation planning and exploration
-- **Availability**: Select cities globally, expanding
+- **Description**: Spatial navigation and 3D route/place preview experiences available selectively by region/device.
+- **Lifecycle**: No specific October 2026 discontinuation validated for this general Maps capability; recheck city/feature availability on official Maps Help before relying on it.
+- **Use**: Route and place preview, weather/traffic context where available.
 
 **113. Maps AI Features**
 
@@ -1480,63 +1450,35 @@ _Updated: June 24, 2026_
 
 ## 💰 **AI Subscription Plans & Access Tiers**
 
-**125. Free Gemini Tier**
+**125. Free Gemini tier**
 
-- **Link**: https://gemini.google
-- **Description**: Free access to core Gemini capabilities
-- **Includes**:
-  - Access to Gemini 2.5 Flash
-  - Basic Imagen 4 image generation
-  - Some Veo video generation (limited)
-  - NotebookLM with smaller limits
-  - Basic Google Search AI features
-- **Availability**: Global (with regional variations)
+- **Link**: https://gemini.google/
+- **Description**: Free access to eligible Gemini assistant and creative features, with variable caps.
+- **Current guidance**: Model selection, image generation, media quotas, research features and previews depend on current app rollout and location. **Do not assume API-retired Imagen/Veo model IDs are live consumer entitlements.**
+- **Other access**: Google Search AI experiences and NotebookLM have separate product limits and eligibility.
+- **Pricing / plan comparator**: https://one.google.com/about/google-ai-plans/
 
-**126. Google AI Plus (around $7.99/month US)**
+**126. Google AI Plus — consumer tier**
 
-- **Link**: https://one.google.com/about/plans
-- **Description**: Consumer AI subscription (mid-tier)
-- **Includes**:
-  - Access to Gemini 3 Pro
-  - 200GB cloud storage
-  - Nano Banana Pro access
-  - Veo 3 Fast
-  - Lyria 3 music generation
-  - Integration with Gmail, Docs, Sheets
-  - 50% off for first 2 months (promotional)
-- **Availability**: 35+ countries including US (launched January 27, 2026)
+- **Link**: https://one.google.com/about/google-ai-plans/
+- **Current plan highlights (October 2026)**: Expanded Gemini access and Gemini Omni Flash creation limits; Google Flow and Gemini in Gmail benefits. Google's public general plan page describes **400 GB storage** for the entry Plus configuration, but editions and regional offers vary.
+- **Warning**: The earlier fixed ~US$7.99 and 200 GB specification was a dated snapshot, **not a current universal price or entitlement**.
+- **Access**: Check the exact country/account-specific plan comparison before subscribing.
 
-**127. Google AI Pro (around $19.99/month US)**
+**127. Google AI Pro — consumer tier**
 
-- **Link**: https://one.google.com/about/plans
-- **Description**: Consumer AI subscription (previously branded as Google One AI Premium) and other AI benefits
-- **Includes**:
-  - Higher limits on all Gemini models
-  - Gemini 2.5 Pro and limited Gemini 3 Pro access
-  - AI Mode in Search with Gemini 3 Pro
-  - Flow: 100 video generations per month
-  - Whisk with Veo 3 access
-  - Jules with higher limits
-  - Enhanced NotebookLM features
-  - Nano Banana Pro image generation
-  - Deeper Gmail/Docs/Drive integration
-  - Approximately 2TB cloud storage bundled
-  - **Google Cloud credits** for building and deploying AI applications (January 2026)
-  - Developer Program premium benefits
-- **Availability**: Most countries globally
+- **Link**: https://one.google.com/about/google-ai-plans/
+- **Current plan highlights (October 2026)**: Access to **Gemini 4 Argon** and higher Gemini/Flow/Notebook and Gemini Omni Flash limits, with AI Studio model benefits depending on eligibility.
+- **Storage**: Google's current general plan comparison lists **5 TB for Google AI Pro**; packages, prices, regional availability and benefits change and are subject to local terms.
+- **Warning**: Older fixed 2 TB / 100 video-generations-per-month assertions are no longer dependable as general plan descriptions.
 
-**128. Google AI Ultra**
+**128. Google AI Ultra — premium consumer tiers**
 
-- **Link**: https://blog.google/products-and-platforms/products/google-one/google-ai-subscriptions/
-- **Description**: Google's highest consumer AI subscription tier, with the highest limits and early access across Gemini and creative/agentic products
-- **Verified I/O 2026 highlights**:
-  - Higher Gemini and Antigravity limits than Pro (Google announced a 5× tier; some markets/accounts may expose other variants)
-  - Gemini 3.5 Flash and priority access to newer models/features
-  - Google Antigravity, Flow, Flow Music, Gemini Spark, Project Genie, and other eligible experiments depending on region
-  - 20 TB cloud storage in the newly announced US plan
-  - YouTube Premium Lite in the announced US bundle
-- **Project Mariner**: Still included for eligible users where available
-- **Availability/pricing**: Varies by country, account, age, and plan variant; verify on Google One before purchase
+- **Link**: https://one.google.com/about/google-ai-plans/
+- **Role**: Higher Gemini, Antigravity, Flow, world-model preview and creative-generation benefits, varying by plan configuration, account and region.
+- **Current plan variants**: Google's 2026 comparison displays different Ultra limit/storage variants (including **20 TB and 30 TB configurations** in supported markets); availability is not uniform.
+- **Access caveat**: Trusted-tester-only **Genie 4** is **not** a generally available Ultra benefit as of October 31; broader Project Genie/Ultra rollout is planned.
+- **Avoid stale terms**: No universal 'unlimited Veo 3.1' promise or fixed worldwide subscription price.
 
 **129. Enterprise / Workspace / Vertex SKUs**
 
@@ -1649,23 +1591,23 @@ _Updated: June 24, 2026_
 
 ## 🆕 **Verified Google I/O 2026 & June 2026 Additions**
 
-> The following entries were missing from the April 22 repository snapshot. Availability statements reflect public Google sources checked through June 24, 2026.
+> **Historical June 2026 entries, not current status:** These items were missing from the April snapshot. Individual rollout claims may have changed; consult the October migration matrix and official access pages before selecting models.
 
 ### **Models, Creation & Personal Intelligence**
 
-**134. Gemini 3.5 Flash**
+**134. Gemini 3.5 Flash — historical GA release, now superseded**
 
-- **Link**: https://ai.google.dev/gemini-api/docs/models
-- **Description**: First generally available model in the Gemini 3.5 family, focused on frontier agentic and coding performance
-- **Access**: Gemini API, Google AI Studio, Antigravity, Android Studio, Gemini Enterprise, AI Mode, and rolling out in the Gemini app
-- **Announced**: May 19, 2026
+- **Link**: https://ai.google.dev/gemini-api/docs/deprecations
+- **History**: `gemini-3.5-flash` became GA May 19, 2026; subsequently superseded by `gemini-3.6-flash` and `gemini-3.8-flash`.
+- **Current behavior**: The old ID automatically routes to 3.6 Flash and is no longer selectable in Google AI Studio. This is **alias routing**, not an endpoint shutdown.
+- **Recommended for new projects**: `gemini-3.8-flash` or a suitable currently supported Flash-Lite model.
 
-**135. Gemini Omni / Gemini Omni Flash**
+**135. Gemini Omni / Gemini Omni 1.1 Flash**
 
-- **Link**: https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/
-- **Description**: “Create anything from any input” multimodal model family, launching first with video generation and conversational editing
-- **Inputs**: Text, images, video, and audio references
-- **Access**: Rolling out globally to eligible Google AI Plus/Pro/Ultra users in Gemini and Flow; also announced for YouTube Shorts and YouTube Create for eligible users
+- **Link**: https://ai.google.dev/gemini-api/docs/changelog
+- **GA endpoint**: `gemini-omni-1.1-flash` released August 27, 2026 for conversational video generation and editing, including video extension, interpolation and output resolution controls.
+- **Preview lifecycle**: `gemini-omni-flash-preview` shut down October 22, 2026; migrate to the GA model.
+- **Broader product access**: Gemini and Flow availability varies with account/region, distinct from developer API availability.
 
 **136. Gemini Spark**
 
@@ -1708,11 +1650,13 @@ _Updated: June 24, 2026_
 - **Description**: Major update to Google's agent-first development platform
 - **Features**: Long-running/async tasks, multi-agent workflows, stronger planning, subagents, hooks, artifacts, and desktop/CLI coordination
 
-**143. Antigravity CLI**
+**143. Antigravity CLI (consumer successor to Gemini CLI)**
 
 - **Link**: https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/
-- **Description**: Agent-first command-line tool replacing Gemini CLI for individual/free/Pro/Ultra users
-- **Availability**: Available to everyone; consumer migration completed June 18, 2026
+- **Status**: Consumer-accessible since May 19, 2026; Gemini CLI consumer transition date June 18.
+- **Capabilities**: Agent-first terminal workflows, subagents, hooks, skills and multi-agent execution sharing a backend with Antigravity desktop.
+- **Enterprise exception**: Existing Gemini CLI/Code Assist enterprise licensing is separately supported; no blanket cancellation.
+- **Related but different**: `gemini-api` Gemini API CLI started beta October 27, 2026.
 
 **144. Antigravity SDK**
 
@@ -1860,21 +1804,148 @@ _Updated: June 24, 2026_
 
 ---
 
-## ⚠️ **Developer Model Lifecycle Snapshot (Verified June 24, 2026)**
+## 🆕 **October 2026 & July–September verified additions (after the June snapshot)**
 
-| Model/API family                            | Verified state                                 | Action                                                                          |
-| ------------------------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------- |
-| Gemini 3.5 Flash                            | Generally available                            | Use current stable model ID                                                     |
-| Gemini 3.1 Flash-Lite                       | Generally available                            | Replace preview ID                                                              |
-| Gemini 3.1 Flash Image / Gemini 3 Pro Image | GA                                             | Preview endpoints scheduled to shut down June 25, 2026                          |
-| Gemini 2.0 Flash / Flash-Lite               | Shut down June 1, 2026                         | Migrate immediately                                                             |
-| Imagen 4 API models                         | Deprecated; shutdown scheduled August 17, 2026 | Migrate to supported image models                                               |
-| Veo 2 / Veo 3 / Veo 3 Fast API models       | Scheduled shutdown June 30, 2026               | Migrate to Veo 3.1 variants                                                     |
-| Veo 3.1 Lite                                | Preview                                        | Use for lower-cost/high-throughput workflows where preview terms are acceptable |
+**170. Gemini 4 Argon (GA)**
+
+- **Model ID**: `gemini-4-argon` | **Released**: October 13, 2026.
+- **Architecture**: Next-generation Mixture-of-Experts (MoE) reasoning engine; effectively bypassed the standalone Gemini 3.5 Pro release.
+- **Context Specifications**: 1,048,576 (1M) tokens unified multimodal context window with ultra-long output decode (up to 1,048,576 output tokens).
+- **Role**: Current Google high-capability multimodal flagship for autonomous software engineering, complex multi-step agents, mathematics, science, and enterprise workflows.
+- **Source**: https://ai.google.dev/gemini-api/docs/changelog
+
+**171. Gemini 4 Carbon (announced; limited access preview)**
+
+- **Announced**: October 28, 2026.
+- **Specialization**: Frontier cybersecurity, defensive exploitation prevention, firmware analysis, and deep multi-hour reasoning.
+- **Availability**: Initially restricted to trusted cybersecurity defenders via Google's **Fairwind Program**; broader developer API availability planned under identical introductory pricing to Gemini 4 Argon. Not public GA as of October 31, 2026.
+- **Source**: https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/
+
+**172. Nano Banana 2.1 (GA)**
+
+- **Model ID**: `gemini-nano-banana-2.1` | **Released**: October 6, 2026.
+- **Role**: Efficient generation/editing with improved instruction-following, text and consistency; takes over from deprecated Nano Banana 2 API model.
+- **Source**: https://ai.google.dev/gemini-api/docs/changelog
+
+**173. Gemini 3.8 Flash / 3.6 Flash / 3.5 Flash-Lite (GA)**
+
+- **Models**: `gemini-3.8-flash` (September 2), `gemini-3.6-flash` (July 21), `gemini-3.5-flash-lite` (July 21).
+- **Lifecycle**: Earlier `gemini-3.5-flash` / `gemini-3.7-flash` IDs redirect; use current IDs directly.
+- **Source**: https://ai.google.dev/gemini-api/docs/deprecations
+
+**174. Gemini 3.8 Live, Extended Thinking and TTS (GA)**
+
+- **Models**: `gemini-3.8-live`, `gemini-3.8-live-extended-thinking`, `gemini-3.8-flash-tts`, `gemini-3.8-flash-lite-tts`.
+- **Releases**: September 15 and September 22, 2026; use GA models rather than TTS/Live previews whose earliest shutdown is November 17, 2026.
+- **Source**: https://ai.google.dev/gemini-api/docs/deprecations
+
+**175. Gemini Omni 1.1 Flash (GA)**
+
+- **Model ID**: `gemini-omni-1.1-flash` | **Released**: August 27, 2026.
+- **Role**: Video generation and editing; successor for retired Omni and Veo preview IDs in Gemini Developer API.
+- **Source**: https://ai.google.dev/gemini-api/docs/changelog
+
+**176. Lyria 3.5 (GA)**
+
+- **Model ID**: `lyria-3.5` | **Released**: September 3, 2026.
+- **Role**: Full-length music generation with text/image input and structure controls.
+- **Source**: https://ai.google.dev/gemini-api/docs/changelog
+
+**177. Gemini Robotics 2 / Robotics-ER 2 (research / API preview)**
+
+- **Announced**: July 30, 2026. Embodied intelligence for whole-body control and manipulation.
+- **Model status**: `gemini-robotics-er-2-preview` remains preview; earlier ER 1.6 preview shut down August 31.
+- **Sources**: https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/ · https://ai.google.dev/gemini-api/docs/deprecations
+
+**178. Genie 4 (trusted-tester research preview)**
+
+- **Announced**: October 27, 2026; real-time multimodal world simulation; not yet generally available to Google AI Ultra / Gemini API users.
+- **Source**: https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/
+
+**179. EmbeddingGemma 2 (open multimodal embedding)**
+
+- **Research release**: October 2026; multimodal embeddings covering text, images, audio and video for edge and retrieval use.
+- **Source**: https://deepmind.google/models/gemma/embeddinggemma/
+
+**180. Gemini API CLI (`gemini-api`) — beta**
+
+- **Released**: October 27, 2026.
+- **Scope**: Stateless command-line client for API media/text tasks, CI and scripts. **Distinct from** Antigravity CLI and legacy Gemini CLI.
+- **Source**: https://ai.google.dev/gemini-api/docs/changelog
+
+**181. Gemini 3.5 Transcribe (GA)**
+
+- **Model**: `gemini-3.5-transcribe`, with a separately listed Live option for realtime use; released August 2026.
+- **Scope**: Transcription/audio understanding and related developer APIs; validate exact streaming feature on chosen endpoint.
+- **Source**: https://ai.google.dev/gemini-api/docs/deprecations
+
+**182. Gemini Embedding 2 (GA)**
+
+- **Model**: `gemini-embedding-2`, GA April 22, 2026; included here because it was missing from the June catalogue.
+- **Migration**: Legacy `embedding-2-preview` shut down August 10, 2026; `gemini-embedding-001` has a May 14, 2028 sunset date.
+- **Source**: https://ai.google.dev/gemini-api/docs/deprecations
+
+**183. Gemini Computer Use — GA (developer API)**
+
+- **Release**: October 30, 2026; Google announced **general availability** of Computer Use across the Gemini **Interactions** and **GenerateContent** APIs.
+- **Use**: Agent-driven navigation and interaction with supported computer interfaces, subject to approval, policy, and operational safeguards.
+- **Distinction**: This is a tool/API capability; it is not a new standalone consumer product or a claim that all account tiers have equal access.
+- **Source**: https://ai.google.dev/gemini-api/docs/changelog
+
+**184. GenerateContent request storage default — paid-tier new projects**
+
+- **Change**: From October 26, 2026, new paid-tier Generate Content API projects use **`store=true` by default** for supported request logging; **existing projects retain their setting**.
+- **Action**: Review data retention and privacy expectations; set **`store=false`** per request or disable logging in the Google AI Studio dashboard where applicable.
+- **Scope**: This is a developer API/project setting, not a blanket claim about all Gemini consumer chats.
+- **Source**: https://ai.google.dev/gemini-api/docs/changelog
+
+---
+
+**185. Playground (Google Labs)**
+
+- **Link**: https://labs.google/
+- **Launched**: October 7, 2026 (US 18+ experimental preview).
+- **Description**: Prompt-to-playable browser game creator enabling users to generate interactive 2D and 3D mini-games and simulations on the fly via natural language prompting and Gemini reasoning.
+- **Features**: Real-time asset generation, physics simulation, customizable gameplay rules, and instant browser playability.
+
+---
+
+## ⚠️ **Developer Model Lifecycle Snapshot (Verified October 31, 2026)**
+
+| Model / API ID(s) | Current state | Date / next action |
+|---|---|---|
+| `gemini-4-argon` | **GA** | Released Oct 13, 2026; 1M unified context / up to 1M decode |
+| Gemini Computer Use API | **GA** | Oct 30, 2026; review permissions and side effects |
+| GenerateContent new paid projects | **Storage enabled by default** | Oct 26, 2026; consider `store=false` / settings opt-out |
+| Gemini 4 Carbon | **Announced, trusted testers** | Oct 28, 2026; Fairwind Program cyber defenders |
+| Jules | **Deprecated / Winding Down** | Active sessions end Nov 11, 2026; full shutdown Dec 31, 2026 |
+| Opal | **Shutting down** | Shutdown Nov 17, 2026; graduating to Skills in Gemini |
+| Gems | **Migrating** | Migration to Skills begins Nov 17, 2026 (personal accounts) |
+| Gemini Code Assist | **Sales Ended** | New sales stopped Oct 9, 2026; renewals supported to 2027 |
+| `gemini-3.8-flash`, `gemini-3.6-flash`, `gemini-3.5-flash-lite` | **GA** | Use current endpoint for new builds |
+| `gemini-3.5-flash`, `gemini-3.7-flash` | **Superseded alias routing** | Redirect to 3.6 / 3.8 respectively; update hardcoded IDs |
+| `gemini-3.1-flash-lite` | **GA, dated shutdown** | May 7, 2027; migrate to 3.5 Flash-Lite |
+| `gemini-3.1-pro-preview` | **Preview** | No shutdown date announced at review |
+| `gemini-nano-banana-2.1` | **GA** | Released Oct 6, 2026 |
+| `gemini-3.1-flash-image` | **Deprecated** | No shutdown date announced; migrate to Nano Banana 2.1 |
+| `gemini-2.5-flash-image` | **Legacy supported** | Shutdown March 15, 2027; migrate to 3.1 Flash-Lite Image |
+| `imagen-4.0-*-001` | **Shut down** | Aug 17, 2026; use supported Nano Banana |
+| `veo-2.0-*`, `veo-3.0-*` developer API IDs | **Shut down** | Jun 30, 2026; migrate from retired IDs |
+| `veo-3.1-*-preview` / `veo-3.1-lite-generate-preview` | **Shut down** | Oct 22, 2026; use Omni 1.1 Flash or supported enterprise endpoint |
+| `gemini-omni-1.1-flash` | **GA** | Released Aug 27, 2026; current Omni video model |
+| `gemini-omni-flash-preview` | **Shut down** | Oct 22, 2026 |
+| `lyria-3.5` | **GA** | Released Sep 3, 2026 |
+| `gemini-3.8-live*` and `gemini-3.8-flash*-tts` | **GA** | Released Sep 15 / Sep 22 |
+| older 2.5/3.1 Live & TTS preview IDs | **Scheduled shutdown** | Earliest Nov 17, 2026; update to GA |
+| `deep-research-pro-preview-12-2025` | **Shut down** | Oct 23, 2026; use April 2026 previews |
+| `antigravity-preview-05-2026` | **Shut down** | Oct 5, 2026; `antigravity-preview-09-2026` remains preview |
+| `gemini-robotics-er-1.6-preview` | **Shut down** | Aug 31, 2026; successor ER 2 preview |
+
+**Sources of truth:** [Gemini API release notes](https://ai.google.dev/gemini-api/docs/changelog) · [Gemini API deprecations](https://ai.google.dev/gemini-api/docs/deprecations) · [Firebase Studio sunset](https://firebase.google.com/docs/studio/migrating-project). Vendor shutdown dates are earliest announced dates when described that way; verify availability against the live endpoint when deploying.
 
 ## 📅 **Update Information**
 
-**Last Updated**: June 24, 2026
+**Last Updated**: October 31, 2026
 
 **Update Frequency**: Google Labs experiments are updated frequently. New tools are regularly added, and experimental features may be:
 
@@ -1884,6 +1955,13 @@ _Updated: June 24, 2026_
 - Expanded to new regions and languages
 
 **Version Changes**:
+
+- **October 31, 2026 targeted status refresh**:
+  - Added Gemini 4 Argon GA and Carbon **limited trusted testing**; not an unrestricted Carbon launch.
+  - Added 3.8 Flash, Nano Banana 2.1, Omni 1.1 Flash, Lyria 3.5, Live/TTS, Genie 4, Robotics 2, EmbeddingGemma 2, Gemini Computer Use GA, Gemini API CLI beta, and October 26 API logging changes.
+  - Corrected Imagen 4 and Veo API shutdowns, deprecated aliases, upcoming November 17 Live/TTS preview retirements, Firebase Studio's March 22, 2027 sunset, Search Live's launched status, and latest Google AI plan benefits.
+  - Preserved June entries as historical context, but older prices, subscriber statistics and rolling-out promises remain point-in-time assertions unless individually rechecked.
+
 
 - **June 2026 verification pass**:
   - Added Gemini 3.5 Flash, Gemini Omni Flash, Antigravity 2.0/CLI/SDK, Managed Agents, I/O 2026 Search/Workspace/media/science announcements, and provenance updates
@@ -1920,10 +1998,17 @@ _Updated: June 24, 2026_
 
 ---
 
-## 📚 **Primary Sources Used for the June 2026 Refresh**
+## 📚 **Primary Sources (June baseline + October 2026 status verification)**
 
 - Google I/O 2026 announcement index: https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/
+- Search Live launch and availability: https://blog.google/products-and-platforms/products/search/search-live-global-expansion/
+- Current Google AI plans: https://one.google.com/about/google-ai-plans/
 - Gemini API release notes: https://ai.google.dev/gemini-api/docs/changelog
+- Firebase Studio retirement and migration: https://firebase.google.com/docs/studio/migrating-project
+- Google Gemini 4 Carbon announcement: https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/
+- Genie 4 research-preview announcement: https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/
+- Gemini Robotics 2: https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/
+- EmbeddingGemma 2: https://deepmind.google/models/gemma/embeddinggemma/
 - Gemini API deprecations: https://ai.google.dev/gemini-api/docs/deprecations
 - Gemini API models: https://ai.google.dev/gemini-api/docs/models
 - Gemini CLI → Antigravity CLI transition: https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/
@@ -1945,4 +2030,4 @@ _Updated: June 24, 2026_
 
 ---
 
-_This catalogue covers **169 numbered Google AI/ML/Data Science products, services, models, experiments, and platform features**. The June 24, 2026 revision prioritizes official primary-source status over speculative launch claims; availability, pricing, quotas, and experiments remain subject to change._
+_This catalogue covers **184 numbered entries**, including original and historical items. The October 31, 2026 pass verified **priority lifecycle and major-release changes**, not every long-tail price, quota or feature assertion. Use linked official live documentation before implementing or purchasing._
